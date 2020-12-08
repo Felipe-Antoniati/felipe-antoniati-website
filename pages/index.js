@@ -2,12 +2,12 @@ import Link from "next/link";
 
 function Home() {
   return (
-    <div>
+    <section className="showcase">
       <h1>Home</h1>
-      <Link href="/sobre">
-        <a>Acessar página Sobre</a>
+      <Link href="/services">
+        <a>Acessar página Services</a>
       </Link>
-    </div>
+    </section>
   );
 }
 export default Home;

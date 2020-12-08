@@ -6,11 +6,13 @@
   "author": "Felipe Antoniati <antoniati.felipe@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev":"next dev"
+    "dev": "next dev"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.5.0",
     "next": "^10.0.3",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0"
   }
 }

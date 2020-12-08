@@ -4,14 +4,18 @@ function Navbar() {
   return (
     <div className="wrapper">
       <div className="container flex">
-        <h1 className="logo">
-          Felipe <span>Antoniati</span>
-        </h1>
+      <div className="social-media">
+        <div className="perfil">
+          <a>Perfil</a>
+        </div>
+        <a>Github</a>
+        <a>Likedin</a>
+      </div>
       <nav className="navbar">
         <ul className="nav-menu">
           <li className="nav-item">
           <Link href="/">
-            <a>Home</a>
+            <a>Inicio</a>
           </Link>
           </li>
           <li className="nav-item">
@@ -22,6 +26,16 @@ function Navbar() {
           <li className="nav-item">
             <Link href="/portifolio">
               <a>Portifolio</a>
+            </Link>
+          </li>          
+          <li className="nav-item">
+            <Link href="/portifolio">
+              <a>Sobre</a>
+            </Link>
+          </li>          
+          <li className="nav-item">
+            <Link href="/portifolio">
+              <a>Contato</a>
             </Link>
           </li>
         </ul>

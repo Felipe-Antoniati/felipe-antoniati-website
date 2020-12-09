@@ -1,5 +1,6 @@
 import * as AiIcons from "react-icons/ai";
 import Link from "next/link";
+import Image from "next/image";
 
 function Home() {
   return (
@@ -56,11 +57,12 @@ function Home() {
       <section className="stats">
         <div className="container">
           <h3 className="stats-heading text-center my-1">
-          Entre em contato agora e saiba mais sobre as soluções inteligentes para sua empresa crescer através da internet
+            Entre em contato agora mesmo e conheça as soluções
+            <br></br> tecnologicas para sua empresa evoluir através da Internet
           </h3>
           <div className="grid grid-3 text-center my-4">
             <div>
-              <AiIcons.AiOutlineMobile size={70} style={{color: "#047AED"}}/>
+              <AiIcons.AiOutlineMobile size={70} style={{ color: "#047AED" }} />
               <h3>Aplicativos Multiplaforma</h3>
               <p>
                 Sua empresa disponível e acessível
@@ -68,7 +70,10 @@ function Home() {
               </p>
             </div>
             <div>
-              <AiIcons.AiOutlineDatabase size={68} style={{color: "#047AED"}}/>
+              <AiIcons.AiOutlineDatabase
+                size={68}
+                style={{ color: "#047AED" }}
+              />
               <h3>Hospedagem 100% Segura</h3>
               <p>
                 Seus dados são armazenados
@@ -76,13 +81,34 @@ function Home() {
               </p>
             </div>
             <div>
-              <AiIcons.AiOutlineSnippets size={70} style={{color: "#047AED"}}/>
+              <AiIcons.AiOutlineSnippets
+                size={70}
+                style={{ color: "#047AED" }}
+              />
               <h3>Gerenciamento de Projeto</h3>
               <p>
                 Mantenha-se sempre informado sobre
                 <br></br>o desempenho do seu Aplicativo
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="cloud bg-primary my-2 py-2">
+        <div className="container grid">
+          <div className="text-center">
+            <h2 className="lg">Acesse meu Portifolio</h2>
+            <p className="lead my-1">
+              Conheça os projetos desevolvidos por mim
+              <br></br> para empresas e pessoas de sucesso
+            </p>
+            <Link href="/portifolio">
+              <a className="btn btn-dark">Acessar</a>
+            </Link>
+          </div>
+          <div className="image-cloud">
+            <AiIcons.AiOutlineTable size={200} />
           </div>
         </div>
       </section>

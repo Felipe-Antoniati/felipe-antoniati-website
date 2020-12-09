@@ -2,7 +2,9 @@
 
 :root {
   --primary-color: #047AED;
-  --ghost-white: #FBFBFF;
+  --secondary-color: #1C3FA8;
+  --dark-color: #002240;
+  --light-color: #FBFBFF;
   --gray-one: #333;
 }
 
@@ -43,7 +45,7 @@ img {
 .wrapper {
   height: 70px;
   background-color: var(--primary-color);
-  color: var(--ghost-white);
+  color: var(--light-color);
 }
 
 .wrapper .flex {
@@ -56,21 +58,21 @@ img {
 }
 
 .nav-item a {
-  color: var(--ghost-white);
+  color: var(--light-color);
   padding: 10px;
   font-size: 1.1rem;
   margin-left: 2rem;
 }
 
 .nav-item a:hover {
-  border-bottom: 3px solid var(--ghost-white);
+  border-bottom: 3px solid var(--light-color);
 }
 
 /* Showcase section */
 .showcase {
   height: 400px;
   background-color: var(--primary-color);
-  color: var(--ghost-white);
+  color: var(--light-color);
   position: relative;
 }
 
@@ -92,7 +94,7 @@ img {
   -webkit-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
-  background: var(--ghost-white);
+  background: var(--light-color);
 }
 
 .showcase h1 {
@@ -109,7 +111,7 @@ img {
 }
 
 .card {
-  background-color: var(--ghost-white);
+  background-color: var(--light-color);
   border-radius: 10px;
   box-shadow: 3px 10px rgba(0, 0, 0, 0.2);
   color: var(--gray-one);
@@ -145,7 +147,7 @@ img {
   padding: 10px 30px;
   cursor: pointer;
   background-color: var(--primary-color);
-  color: var(--ghost-white);
+  color: var(--light-color);
   border: none;
   border-radius: 5px;
 }
@@ -156,7 +158,11 @@ img {
 
 .btn-outline {  
   background-color: transparent;
-  border: 1px solid var(--ghost-white);
+  border: 1px solid var(--light-color);
+}
+
+.btn.btn-dark {
+  background-color: var(--dark-color);
 }
 
 .showcase-form input:focus {
@@ -166,7 +172,7 @@ img {
 /* Stats */
 .stats {
   padding-top: 100px;
-  background-color:  var(--ghost-white);
+  background-color:  var(--light-color);
 }
 
 .stats-heading {
@@ -180,8 +186,21 @@ img {
   margin-top: 1rem;
 }
 
-
 .stats .grid p {
   font-size: 18px;
   color: var(--gray-one);
+}
+
+/* cloud */
+
+.cloud {
+  height: 270px;
+}
+
+.cloud .grid{
+  grid-template-columns: 4fr 3fr;
+}
+
+.image-cloud {
+  margin-left: 7rem;
 }

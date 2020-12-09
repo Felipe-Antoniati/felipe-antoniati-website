@@ -152,8 +152,8 @@ img {
   border-radius: 5px;
 }
 
-.btn a:hover {
-  scale: 1;
+.btn:hover {
+  transform: scale(1.1);
 }
 
 .btn-outline {  
@@ -194,7 +194,7 @@ img {
 /* cloud */
 
 .cloud {
-  height: 270px;
+  height: 300px;
 }
 
 .cloud .grid{
@@ -202,5 +202,36 @@ img {
 }
 
 .image-cloud {
-  margin-left: 7rem;
+  width: 80%;
+}
+
+/* techs */
+
+.techs .flex {
+  flex-wrap: wrap;
+} 
+
+.techs {
+  text-align: center;
+  margin: 50px 10px 40px;
+}
+
+.techs p {
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.techs .card {
+  margin-left: 2.6rem;
+  transition: transform 0.2s ease-in;
+}
+
+.techs .card h4 {
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+
+.techs .card:hover {
+  transform: translateY(-15px);
 }

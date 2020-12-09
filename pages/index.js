@@ -1,6 +1,6 @@
 import * as AiIcons from "react-icons/ai";
 import Link from "next/link";
-import Image from "next/image";
+import cloudImg from "../images/cloud.png";
 
 function Home() {
   return (
@@ -98,7 +98,7 @@ function Home() {
       <section className="cloud bg-primary my-2 py-2">
         <div className="container grid">
           <div className="text-center">
-            <h2 className="lg">Acesse meu Portifolio</h2>
+            <h2 className="lg">Acesse o Portifolio</h2>
             <p className="lead my-1">
               Conheça os projetos desevolvidos por mim
               <br></br> para empresas e pessoas de sucesso
@@ -108,7 +108,44 @@ function Home() {
             </Link>
           </div>
           <div className="image-cloud">
-            <AiIcons.AiOutlineTable size={200} />
+            <img src={cloudImg} />
+          </div>
+        </div>
+      </section>
+
+      <section className="techs">
+        <h2 className="md text-center my2">
+          Ferramentas de Trabalho
+        </h2>
+        <p>Estas são as tecnologias utilizadas para desenvolver os Aplicativos</p>
+        <div className="container flex">
+          <div className="card">
+            <h4>Node.js</h4>
+            <img src={require("../images/logos/node.png")} alt="Node JS"/>
+          </div>          
+          {/* <div className="card">
+            <h4>Python</h4>
+            <img src={require("../images/logos/python.png")} alt="Node JS"/>
+          </div>       
+          <div className="card">
+            <h4>Django</h4>
+            <img src={require("../images/logos/django.png")} alt="PHP"/>
+          </div>           */}
+          <div className="card">
+            <h4>React</h4>
+            <img src={require("../images/logos/react.png")} alt="PHP"/>
+          </div>
+          <div className="card">
+            <h4>Typescript</h4>
+            <img src={require("../images/logos/ts.png")} alt="PHP"/>
+          </div>          
+          <div className="card">
+            <h4>Next.js</h4>
+            <img src={require("../images/logos/next.png")} alt="PHP"/>
+          </div>          
+          <div className="card">
+            <h4>Vercel</h4>
+            <img src={require("../images/logos/vercel.png")} alt="PHP"/>
           </div>
         </div>
       </section>

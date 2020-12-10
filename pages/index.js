@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
@@ -7,6 +8,7 @@ import cloudImg from "../images/cloud.png";
 function Home() {
   return (
     <>
+    <Navbar />
       <section className="showcase">
         <div className="container grid">
           <div className="showcase-text">

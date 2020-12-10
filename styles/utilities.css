@@ -41,14 +41,23 @@
 
 .bg-dark,
 .btn-dark {
-  background-color: #505d69;
-  color: var(--ghost-color);
+  background-color:  #1C3FA8;
+  color: #FFF;
 }
 
 .bg-light,
 .btn-light {
   background-color: var(--light-color);
   color: var(--gray-one);
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #FFF;
 }
 
 /* Text Sizes */

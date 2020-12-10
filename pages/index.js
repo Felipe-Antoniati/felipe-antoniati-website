@@ -1,4 +1,6 @@
 import * as AiIcons from "react-icons/ai";
+import * as BsIcons from "react-icons/bs";
+import * as HiIcons from "react-icons/hi";
 import Link from "next/link";
 import cloudImg from "../images/cloud.png";
 
@@ -70,10 +72,7 @@ function Home() {
               </p>
             </div>
             <div>
-              <AiIcons.AiOutlineDatabase
-                size={68}
-                style={{ color: "#047AED" }}
-              />
+              <BsIcons.BsCloud size={75} style={{ color: "#047AED" }} />
               <h3>Hospedagem 100% Segura</h3>
               <p>
                 Seus dados são armazenados
@@ -114,41 +113,66 @@ function Home() {
       </section>
 
       <section className="techs">
-        <h2 className="md text-center my2">
-          Ferramentas de Trabalho
-        </h2>
-        <p>Estas são as tecnologias utilizadas para desenvolver os Aplicativos</p>
+        <h2 className="md text-center my2">Ferramentas de Trabalho</h2>
+        <p>
+          Estas são as tecnologias utilizadas para desenvolver os Aplicativos
+        </p>
         <div className="container flex">
           <div className="card">
             <h4>Node.js</h4>
-            <img src={require("../images/logos/node.png")} alt="Node JS"/>
-          </div>          
-          {/* <div className="card">
+            <img src={require("../images/logos/node.png")} alt="Node JS" />
+          </div>
+          <div className="card">
             <h4>Python</h4>
-            <img src={require("../images/logos/python.png")} alt="Node JS"/>
-          </div>       
+            <img src={require("../images/logos/python.png")} alt="Node JS" />
+          </div>
           <div className="card">
             <h4>Django</h4>
-            <img src={require("../images/logos/django.png")} alt="PHP"/>
-          </div>           */}
+            <img src={require("../images/logos/django.png")} alt="PHP" />
+          </div>
           <div className="card">
             <h4>React</h4>
-            <img src={require("../images/logos/react.png")} alt="PHP"/>
+            <img src={require("../images/logos/react.png")} alt="PHP" />
           </div>
           <div className="card">
             <h4>Typescript</h4>
-            <img src={require("../images/logos/ts.png")} alt="PHP"/>
-          </div>          
+            <img src={require("../images/logos/ts.png")} alt="PHP" />
+          </div>
           <div className="card">
             <h4>Next.js</h4>
-            <img src={require("../images/logos/next.png")} alt="PHP"/>
-          </div>          
-          <div className="card">
-            <h4>Vercel</h4>
-            <img src={require("../images/logos/vercel.png")} alt="PHP"/>
+            <img src={require("../images/logos/next.png")} alt="PHP" />
           </div>
+          {/* <div className="card">
+            <h4>Vercel</h4>
+            <img src={require("../images/logos/vercel.png")} alt="PHP" />
+          </div> */}
         </div>
       </section>
+
+      <footer className="footer bg-dark">
+        <div className="container grid grid-3">
+          <div>
+            <h1>Felipe Antoniati</h1>
+            <p>&copy; Copyright 2020</p>
+          </div>
+          <div className="contact-footer">
+            <div className="icon-footer">
+              <AiIcons.AiOutlineMail size={30} color="#FBFBFF" />
+              <h3>antoniati.felipe@gmail.com</h3>
+            </div>
+            <div className="icon-footer">
+              <HiIcons.HiOutlineLocationMarker size={30} color="#FBFBFF" />
+              <h3>Bertioga - SP</h3>
+            </div>
+          </div>
+        <div className="salmos">
+          <h2>
+          "Todas as coisas cooperam para o bem daqueles que amam à Deus."
+            <span>(Rm 8:28)</span>
+          </h2>
+        </div>
+        </div>
+      </footer>
     </>
   );
 }

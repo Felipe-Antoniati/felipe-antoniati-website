@@ -57,6 +57,10 @@ img {
   list-style-type: none;
 }
 
+.social a{
+  margin: 0 10px;
+}
+
 .nav-item a {
   color: var(--light-color);
   padding: 10px;
@@ -181,7 +185,7 @@ img {
 }
 
 .stats .grid h3 {
-  font-size: 25px;
+  font-size: 20px;
   color: var(--primary-color);
   margin-top: 1rem;
 }
@@ -194,7 +198,7 @@ img {
 /* cloud */
 
 .cloud {
-  height: 300px;
+  height: 325px;
 }
 
 .cloud .grid{
@@ -217,13 +221,12 @@ img {
 }
 
 .techs p {
-  font-weight: 300;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
 .techs .card {
-  margin-left: 2.6rem;
+  margin-left: 1rem;
   transition: transform 0.2s ease-in;
 }
 
@@ -234,4 +237,24 @@ img {
 
 .techs .card:hover {
   transform: translateY(-15px);
+}
+
+/*footer*/
+
+.footer {
+  height: 300px;
+  margin-top: 5rem;
+}
+
+.icon-footer {
+  display: flex;
+  padding: 0.3rem;
+}
+
+.salmos h2 {
+  font-size: 1.4rem;
+}
+
+.icon-footer h3 {
+  margin-left: 1rem;
 }

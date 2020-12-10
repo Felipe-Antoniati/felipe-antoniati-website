@@ -12,6 +12,7 @@ class MyDocument extends Document {
         <Head>
           <title>Felipe Anoniati | Desenvolvedor web</title>
           <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         </Head>
         <body>
           <Main />

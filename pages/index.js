@@ -1,6 +1,6 @@
+import Footer from "../components/Footer";
 import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
-import * as HiIcons from "react-icons/hi";
 import Link from "next/link";
 import cloudImg from "../images/cloud.png";
 
@@ -14,8 +14,8 @@ function Home() {
               Olá, eu sou <span>Felipe Antoniati</span>
             </h1>
             <p>
-              Desenvolvedor web fullstack, responsável por
-              <br /> criar Sites modernos e Aplicativos dinâmicos
+              Desenvolvedor web fullstack, responsável por criar Sites modernos
+              e Aplicativos dinâmicos
             </p>
             <Link href="/about">
               <a className="btn btn-outline">Saiba mais</a>
@@ -59,8 +59,8 @@ function Home() {
       <section className="stats">
         <div className="container">
           <h3 className="stats-heading text-center my-1">
-            Entre em contato agora mesmo e conheça as soluções
-            <br></br> tecnologicas para sua empresa evoluir através da Internet
+            Entre em contato agora mesmo e conheça as soluções tecnologicas para
+            sua empresa evoluir através da Internet
           </h3>
           <div className="grid grid-3 text-center my-4">
             <div>
@@ -148,31 +148,7 @@ function Home() {
           </div> */}
         </div>
       </section>
-
-      <footer className="footer bg-dark">
-        <div className="container grid grid-3">
-          <div>
-            <h1>Felipe Antoniati</h1>
-            <p>&copy; Copyright 2020</p>
-          </div>
-          <div className="contact-footer">
-            <div className="icon-footer">
-              <AiIcons.AiOutlineMail size={30} color="#FBFBFF" />
-              <h3>antoniati.felipe@gmail.com</h3>
-            </div>
-            <div className="icon-footer">
-              <HiIcons.HiOutlineLocationMarker size={30} color="#FBFBFF" />
-              <h3>Bertioga - SP</h3>
-            </div>
-          </div>
-        <div className="salmos">
-          <h2>
-          "Todas as coisas cooperam para o bem daqueles que amam à Deus."
-            <span>(Rm 8:28)</span>
-          </h2>
-        </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

@@ -72,6 +72,79 @@ img {
   border-bottom: 3px solid var(--light-color);
 }
 
+/*Sidebar*/
+.menu-bars {
+  display: none;
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  background: none;
+  color: #FBFBFF;
+}
+
+
+.nav-sidebar {
+  background-color: var(--dark-color);
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  transition: 850ms;
+  z-index: 1;
+}
+
+.nav-sidebar.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #FBFBFF;
+  font-size: 18px;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.nav-sidebar-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: var(--dark-color);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.navbar-toggle a {
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  background: none;
+  color: #FBFBFF;
+}
+
 /* Showcase section */
 .showcase {
   height: 400px;
@@ -257,4 +330,95 @@ img {
 
 .icon-footer h3 {
   margin-left: 1rem;
+}
+
+/*Tablets and under*/
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+
+  .cloud {
+    height: 625px;
+  }
+
+  .image-cloud {
+    margin-top: 1rem;
+    margin-left: 4rem;
+    width: 70%;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    height: 110px;
+  }
+
+  .wrapper .flex {
+    flex-direction: row;
+  }
+
+  .wrapper ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .showcase h1 {
+    font-size: 2rem;
+  }
+  .showcase h1 span {
+    font-weight: 400;
+  }
+  .showcase p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    margin: 20px 0;
+  }
+  .social {
+    margin-top: 15px;
+  }
+
+  .menu-bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .menu-bars a{
+    margin-left: 225px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .cloud {
+    height: 525px;
+  }
+
+  .image-cloud {
+    margin-top: 1rem;
+    margin-left: 4rem;
+    width: 70%;
+  }
 }

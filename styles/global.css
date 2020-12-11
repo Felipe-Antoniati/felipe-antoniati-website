@@ -40,111 +40,6 @@ img {
   width: 100%;
 }
 
-
-/* Navbar */
-.wrapper {
-  height: 70px;
-  background-color: var(--primary-color);
-  color: var(--light-color);
-}
-
-.wrapper .flex {
-  justify-content: space-between;
-}
-
-.nav-menu {
-  display: flex;
-  list-style-type: none;
-}
-
-.social a{
-  margin: 0 10px;
-}
-
-.nav-item a {
-  color: var(--light-color);
-  padding: 10px;
-  font-size: 1.1rem;
-  margin-left: 2rem;
-}
-
-.nav-item a:hover {
-  border-bottom: 3px solid var(--light-color);
-}
-
-/*Sidebar*/
-.menu-bars {
-  display: none;
-  margin-left: 2rem;
-  font-size: 1.6rem;
-  background: none;
-  color: #FBFBFF;
-}
-
-
-.nav-sidebar {
-  background-color: var(--dark-color);
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0%;
-  transition: 850ms;
-  z-index: 1;
-}
-
-.nav-sidebar.active {
-  left: 0;
-  transition: 350ms;
-}
-
-.nav-text {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 8px 0 8px 16px;
-  list-style: none;
-  height: 60px;
-}
-
-.nav-text a {
-  text-decoration: none;
-  color: #FBFBFF;
-  font-size: 18px;
-  width: 80%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  border-radius: 4px;
-}
-
-.nav-text a:hover {
-  border: 1px solid var(--primary-color);
-}
-
-.nav-sidebar-items {
-  width: 100%;
-}
-
-.navbar-toggle {
-  background-color: var(--dark-color);
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-
-.navbar-toggle a {
-  margin-left: 2rem;
-  font-size: 1.6rem;
-  background: none;
-  color: #FBFBFF;
-}
-
 /* Showcase section */
 .showcase {
   height: 400px;
@@ -190,7 +85,7 @@ img {
 .card {
   background-color: var(--light-color);
   border-radius: 10px;
-  box-shadow: 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 5px 0px 0px rgba(0, 0, 0, 0.2);
   color: var(--gray-one);
   padding: 20px; 
   margin: 10px;
@@ -392,24 +287,6 @@ img {
     font-weight: 300;
     line-height: 2.5rem;
     margin: 20px 0;
-  }
-  .social {
-    margin-top: 15px;
-  }
-
-  .menu-bars {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-  }
-
-  .menu-bars a{
-    margin-left: 225px;
-  }
-
-  .nav-menu {
-    display: none;
   }
 
   .cloud {

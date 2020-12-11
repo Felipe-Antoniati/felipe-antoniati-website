@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import * as AiIcons from "react-icons/ai";
 import * as BiIcons from "react-icons/bi";
+import serverImg from "../images/server.png";
 
 function Services() {
   return (

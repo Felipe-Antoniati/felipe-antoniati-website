@@ -60,6 +60,23 @@
   color: #FFF;
 }
 
+/*Text Colors*/
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-dark {
+  color:  var(--dark-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
 /* Text Sizes */
 .lead {
   font-size: 20px;

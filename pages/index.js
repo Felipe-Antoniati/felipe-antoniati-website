@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
 import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
-import Link from "next/link";
-import cloudImg from "../images/cloud.png";
+import laptopMobileImg from "../images/laptop-mobile-m.png";
 
 function Home() {
   return (
@@ -96,7 +98,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="cloud bg-primary my-2 py-2">
+      <section className="my-portifolio bg-primary my-2 py-2">
         <div className="container grid">
           <div className="text-center">
             <h2 className="lg">Acesse o Portifolio</h2>
@@ -108,8 +110,8 @@ function Home() {
               <a className="btn btn-dark">Acessar</a>
             </Link>
           </div>
-          <div className="image-cloud">
-            <img src={cloudImg} />
+          <div className="image-laptop-mobile">
+            <img src={laptopMobileImg} />
           </div>
         </div>
       </section>

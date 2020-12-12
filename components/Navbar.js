@@ -5,7 +5,6 @@ import { SidebarData } from "./SidebarData";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { IconContext } from "react-icons";
-import perfilImg from "../images/perfil.png";
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);

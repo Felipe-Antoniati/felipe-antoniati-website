@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
 import * as AiIcons from "react-icons/ai";
 import * as BiIcons from "react-icons/bi";
 import serverImg from "../images/server.png";
@@ -8,7 +9,7 @@ function Services() {
   return (
     <>
       <Navbar />
-      <section className="features-head bg-primary">
+      <section className="services-head bg-primary">
         <div className="container grid">
           <div className="showcase-text">
             <h1 className="title-portifolio">Serviços de qualidade</h1>
@@ -23,7 +24,7 @@ function Services() {
         </div>
       </section>
 
-      <section className="features-main my-2">
+      <section className="services-main my-2">
         <div className="container grid grid-3">
           <div className="card flex">
             <AiIcons.AiOutlineMobile size={75} />

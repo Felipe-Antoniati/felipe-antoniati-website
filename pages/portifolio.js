@@ -1,8 +1,5 @@
 import Link from "next/link";
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-
 import * as AiIcons from "react-icons/ai";
 import mobileMockupImg from "../images/mobile-mockup.png";
 import homeImg from "../images/apps/home.png";
@@ -10,7 +7,6 @@ import homeImg from "../images/apps/home.png";
 function Services() {
   return (
     <>
-      <Navbar />
       <section className="portifolio-head bg-primary pry-3">
         <div className="container grid">
           <div>
@@ -134,8 +130,6 @@ function Services() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

@@ -1,0 +1,15 @@
+.select-block select {
+  width: 100%;
+  color: var(--gray-one);
+  height: 2rem;
+  outline:0;
+  border: 1px solid #b4becb;
+  font-size: 1rem;
+  padding: 0 0.3rem;
+  background: #FFF;
+}
+
+.option-list {
+  font-size: 1.4rem;
+  padding: 2rem 1rem;
+}

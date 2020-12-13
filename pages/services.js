@@ -1,6 +1,3 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-
 import * as AiIcons from "react-icons/ai";
 import * as BiIcons from "react-icons/bi";
 import serverImg from "../images/server.png";
@@ -8,7 +5,6 @@ import serverImg from "../images/server.png";
 function Services() {
   return (
     <>
-      <Navbar />
       <section className="services-head bg-primary">
         <div className="container grid">
           <div className="showcase-text">
@@ -58,7 +54,6 @@ function Services() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

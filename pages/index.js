@@ -1,16 +1,14 @@
+import { useState } from "react";
 import Link from "next/link";
-
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-
+import Select from "../components/Select";
 import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
 import laptopMobileImg from "../images/laptop-mobile-m.png";
 
 function Home() {
+  const [subject, setSubject] = useState("");
   return (
     <>
-    <Navbar />
       <section className="showcase">
         <div className="container grid">
           <div className="showcase-text">
@@ -45,11 +43,19 @@ function Home() {
                 />
               </div>
               <div className="form-control">
-                <input
-                  type="text"
-                  name="message"
-                  placeholder="Descreva seu projeto, ou solicite um..."
-                  required
+                <Select
+                  name="subject"
+                  value={subject}
+                  onChange={(e) => {
+                    setSubject(e.target.value);
+                  }}
+                  options={[
+                    { value: "Aplicativo", label: "Aplicativo" },
+                    { value: "Site", label: "Blog" },
+                    { value: "Ecommerce", label: "E-commerce" },
+                    { value: "Blog", label: "Site" },
+                    { value: "Design", label: "UI/UX Design" },
+                  ]}
                 />
               </div>
               <Link href="/about">
@@ -63,16 +69,16 @@ function Home() {
       <section className="stats">
         <div className="container">
           <h3 className="stats-heading text-center my-1">
-            Entre em contato agora mesmo e conheça as soluções tecnologicas para
-            sua empresa evoluir através da Internet
+            Solicite um orçamento e conheça as soluções tecnologicas para sua
+            empresa evoluir através da Internet
           </h3>
           <div className="grid grid-3 text-center my-4">
             <div>
               <AiIcons.AiOutlineMobile size={70} style={{ color: "#047AED" }} />
               <h3>Aplicativos Multiplaforma</h3>
               <p>
-                Sua empresa disponível e acessível
-                <br></br>em qualquer dispositivo atual
+                Tenha sua empresa disponível nas plataformas Android do Google
+                <br/>e iOS da Apple.
               </p>
             </div>
             <div>
@@ -80,7 +86,8 @@ function Home() {
               <h3>Hospedagem 100% Segura</h3>
               <p>
                 Seus dados são armazenados
-                <br></br>nos melhores servidores
+                <br/> nos melhores Servidores: 
+                <br/>Vercel, Netlify, Hostgator
               </p>
             </div>
             <div>
@@ -90,8 +97,9 @@ function Home() {
               />
               <h3>Gerenciamento de Projeto</h3>
               <p>
-                Mantenha-se sempre informado sobre
-                <br></br>o desempenho do seu Aplicativo
+                Mantenha-se sempre informado 
+                <br/>sobre os custos e desempenho
+                <br/> do seu Aplicativo
               </p>
             </div>
           </div>
@@ -152,7 +160,6 @@ function Home() {
           </div> */}
         </div>
       </section>
-      <Footer />
     </>
   );
 }

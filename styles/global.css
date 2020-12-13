@@ -107,7 +107,7 @@ pre {
 
 .showcase-form {
   position: relative;
-  top: 4rem;
+  top: 2.6rem;
   height: 350px;
   width: 400px;
   padding: 40px;
@@ -246,7 +246,7 @@ pre {
   .grid,
   .showcase .grid,
   .stats .grid,
-  .cloud .grid,
+  .my-portifolio .grid,
   .portifolio-head .grid,
   .services .grid {
     grid-template-columns: 1fr;
@@ -267,11 +267,11 @@ pre {
     margin: auto;
   }
 
-  .cloud {
+  .my-portifolio {
     height: 625px;
   }
 
-  .image-cloud {
+  .image-laptop-mobile {
     margin-top: 1rem;
     margin-left: 4rem;
     width: 70%;
@@ -279,18 +279,6 @@ pre {
 }
 
 @media (max-width: 650px) {
-  .wrapper {
-    height: 110px;
-  }
-
-  .wrapper .flex {
-    flex-direction: row;
-  }
-
-  .wrapper ul {
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
 
   .showcase h1 {
     font-size: 2rem;
@@ -304,16 +292,23 @@ pre {
     line-height: 2.5rem;
     margin: 20px 0;
   }
+  
 
-  .cloud {
+  .my-portifolio {
     height: 525px;
   }
 
-  .image-cloud {
-    margin-top: 1rem;
-    margin-left: 4rem;
-    width: 70%;
+  .image-laptop-mobile {
+    margin-left: 2rem;
+    width: 85%;
   }
+
+  .techs p {
+    max-width: 20rem;
+    margin-left: 4rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
 }
 
 /*Services*/
